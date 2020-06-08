@@ -19,7 +19,8 @@ https://bootstrapious.com/p/universal-business-e-commerce-template
 *
 */
 .boxed {
-  background: url("../img/boxed-pattern.png");
+  background: url(https://www.toptal.com/designers/subtlepatterns/patterns/subtle_zebra_3d.png);
+  /* background: url("../img/boxed-pattern.png"); */
 }
 
 .boxed #all {
@@ -247,6 +248,7 @@ p.lead {
 
 .heading, .panel-heading {
   margin-bottom: 1rem;
+  margin-top: 1rem;
 }
 
 .heading h1, .panel-heading h1, .heading h2, .panel-heading h2, .heading h3, .panel-heading h3, .heading h4, .panel-heading h4, .heading h5, .panel-heading h5, .heading h6, .panel-heading h6 {
@@ -1274,9 +1276,16 @@ header.nav-holder.sticky {
   transition: all 0.3s;
 }
 
-.box-simple h3 {
+.box-simple h4 {
+  font-weight: normal;
+  font-size: 18px;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  line-height: 1.5;
+  color: #555555;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .box-simple p {

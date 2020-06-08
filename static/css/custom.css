@@ -1,1 +1,100 @@
 /* your styles go here */
+
+.box-image-text .image {
+    min-height: 200px;
+    max-height: 200px;
+  }
+  
+  .box-simple {
+    min-height: 230px;
+  }
+
+  .bar.background-gray {
+    background: #eeeeee;
+  }
+
+  .navbar-brand  {
+    float: left;
+  }
+  #navigation {
+    float: right
+  }
+  footer.main-footer {
+    color: #eeeeee;
+  }
+  footer.main-footer .contact a {
+    color: #467fbf;
+}
+
+#footer .blog-list .item {
+  height: 5rem;
+}
+#footer .blog-list .item .image {
+  float: left;
+}
+
+#footer .blog-list .item .name {
+  float: right;
+  text-transform: uppercase;
+}
+
+#footer .blog-list .item .name h5 {
+  font-size: 0.75rem;
+}
+
+#heading-breadcrumbs {
+  margin-bottom: 2.5rem;
+  font-size: 0.7rem;
+}
+/* #blog-listing-medium .post .date-comments {
+  float: right; */
+  /* font-size: 12px; */
+/* #footer .blog-list .item .name a {
+  text-transform: uppercase;
+} */
+/* #blog-listing-medium .post .date-comments a {
+  color: #999999;
+  margin-right: 20px;
+} */
+
+section, div.section {
+  margin-bottom: 2.5rem;
+}
+
+#map {
+  border: 0rem;
+  /* border-top: 1px solid #467fbf;
+  border-bottom: 1px solid #467fbf;
+  height: 300px; */
+}
+
+/*!
+ * Yamm!3 - Yet another megamenu for Bootstrap 3
+ * http://geedmo.github.com/yamm3
+ *
+ * @geedmo - Licensed under the MIT license
+ */
+ .yamm .nav,
+ .yamm .collapse,
+ .yamm .dropup.use-yamm,
+ .yamm .dropdown.use-yamm {
+   position: static;
+ }
+ .yamm .container {
+   position: relative;
+ }
+ .yamm .dropdown-menu {
+   left: auto;
+ }
+ .yamm .nav.navbar-right .dropdown-menu {
+   left: auto;
+   right: 0;
+ }
+ .yamm .yamm-content {
+   padding: 20px 30px;
+ }
+ .yamm .dropdown.yamm-fw .dropdown-menu {
+   left: 15px;
+   right: 15px;
+ }
+ 
