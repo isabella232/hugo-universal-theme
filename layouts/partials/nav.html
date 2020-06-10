@@ -10,7 +10,7 @@
         <span class="sr-only">{{ i18n "navToggle" }}</span>
         <i class="fa fa-align-justify"></i>
       </button>
-      <div class="navbar-collapse collapse" id="navigation">
+      <div class="navbar-collapse collapse row justify-content-end" id="navigation">
           <ul class="nav navbar-nav navbar-right">
             {{ $current := . }}
             {{ range .Site.Menus.main }}

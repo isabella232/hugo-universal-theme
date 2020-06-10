@@ -1,46 +1,126 @@
 /* your styles go here */
 
+body {
+  font-size: 100%;
+}
+
+h1 {
+  font-size: 1.875rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.125rem;
+}
+
+h4 {
+  font-size: 1rem;
+}
+
+/* #card-accordion div {
+  margin-bottom: 20px;
+} */
+
+.card-columns {
+  width: 100%;
+}
+
+.card {}
+
+.card-header {
+  color: #333;
+  background-color: #f5f5f5;
+  border-color: #ddd;
+}
+
+.card-title h4 {}
+
+.card-body p {
+  font-size: .9rem;
+  color: #555;
+}
+
+.card-body label {
+  font-size: 0.8rem;
+  font-weight: 400 !important;
+  color: #777;
+  opacity: 0.9;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.heading h1 {}
+
+.heading.text-center h1::after {
+  border-bottom: solid 5px #467fbf;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .box-image-text .image {
-    min-height: 200px;
-    max-height: 200px;
-  }
-  
-  .box-simple {
-    min-height: 230px;
-  }
+  min-height: 200px;
+  max-height: 200px;
+}
 
-  .bar.background-gray {
-    background: #eeeeee;
-  }
+.box-simple h3 {
+  font-weight: normal;
+  font-size: 18px;
+  text-transform: uppercase;
+  line-height: 1.5;
+  color: #555555;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
 
-  .navbar-brand  {
-    float: left;
-  }
+.box-simple.box-white {
+  margin-bottom: 40px;
+  min-height: 230px;
+  text-align: center;
+}
 
-  .portfolio-project ul {
-    font-size: .85rem;
-    color: #888;
-  }
+.bar.background-gray {
+  background: #eeeeee;
+}
 
-  .post {
-    color: #888;
-  }
-  .post h2 {
-    color: #888;
-  }
-  #navigation {
-    float: right
-  }
-  footer.main-footer {
-    color: #eeeeee;
-  }
-  footer.main-footer .contact a {
-    color: #467fbf;
+.navbar-brand {
+  float: left;
+}
+
+.portfolio-project ul {
+  font-size: .85rem;
+  color: #888;
+}
+
+.post {
+  color: #888;
+}
+
+.post h2 {
+  color: #888;
+}
+
+#navigation {
+  float: right
+}
+
+footer.main-footer {
+  color: #eeeeee;
+}
+
+footer.main-footer .contact a {
+  color: #467fbf;
 }
 
 #footer .blog-list .item {
   height: 5rem;
 }
+
 #footer .blog-list .item .image {
   float: left;
 }
@@ -58,9 +138,10 @@
   margin-bottom: 2.5rem;
   font-size: 0.7rem;
 }
+
 /* #blog-listing-medium .post .date-comments {
   float: right; */
-  /* font-size: 12px; */
+/* font-size: 12px; */
 /* #footer .blog-list .item .name a {
   text-transform: uppercase;
 } */
@@ -74,15 +155,20 @@
   background-color: #fff;
   /* border-color: #888; */
 }
-section, div.section {
+
+section,
+div.section {
   margin-bottom: 2.5rem;
 }
+
 .clearfix .author-category p {
   float: left;
 }
+
 .clearfix .data-comments p {
   float: right;
 }
+
 #map {
   border: 0rem;
   /* border-top: 1px solid #467fbf;
@@ -96,27 +182,31 @@ section, div.section {
  *
  * @geedmo - Licensed under the MIT license
  */
- .yamm .nav,
- .yamm .collapse,
- .yamm .dropup.use-yamm,
- .yamm .dropdown.use-yamm {
-   position: static;
- }
- .yamm .container {
-   position: relative;
- }
- .yamm .dropdown-menu {
-   left: auto;
- }
- .yamm .nav.navbar-right .dropdown-menu {
-   left: auto;
-   right: 0;
- }
- .yamm .yamm-content {
-   padding: 20px 30px;
- }
- .yamm .dropdown.yamm-fw .dropdown-menu {
-   left: 15px;
-   right: 15px;
- }
- 
+.yamm .nav,
+.yamm .collapse,
+.yamm .dropup.use-yamm,
+.yamm .dropdown.use-yamm {
+  position: static;
+}
+
+.yamm .container {
+  position: relative;
+}
+
+.yamm .dropdown-menu {
+  left: auto;
+}
+
+.yamm .nav.navbar-right .dropdown-menu {
+  left: auto;
+  right: 0;
+}
+
+.yamm .yamm-content {
+  padding: 20px 30px;
+}
+
+.yamm .dropdown.yamm-fw .dropdown-menu {
+  left: 15px;
+  right: 15px;
+}
