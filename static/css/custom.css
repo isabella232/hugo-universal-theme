@@ -1,5 +1,8 @@
 /* your styles go here */
 
+/* html, body {
+  height: 100%;
+} */
 body {
   font-size: 100%;
 }
@@ -24,6 +27,15 @@ h4 {
   margin-bottom: 20px;
 } */
 
+.btn.btn-link {
+
+}
+header {
+  /* position: fixed; */
+  opacity: 100%;
+  background-color: #fff;
+  z-index: 999;
+}
 .card-columns {
   width: 100%;
 }
@@ -36,13 +48,21 @@ h4 {
   border-color: #ddd;
 }
 
-.card-title h4 {}
+.card-header button {
+  font-size: 1rem;
+  color: #333;
+  margin: 0 !important;
+  line-height: 1rem;
+}
 
 .card-body p {
   font-size: .9rem;
   color: #555;
 }
-
+.card-title {
+  padding: 0;
+  /* height: 1rem; */
+}
 .card-body label {
   font-size: 0.8rem;
   font-weight: 400 !important;
@@ -111,6 +131,7 @@ h4 {
 
 footer.main-footer {
   color: #eeeeee;
+  position: relative;
 }
 
 footer.main-footer .contact a {
@@ -151,9 +172,10 @@ footer.main-footer .contact a {
 } */
 
 .read-more a {
-  /* color: #888; */
+  color: #888;
   background-color: #fff;
-  /* border-color: #888; */
+  border-color: #888;
+  float: right;
 }
 
 section,
