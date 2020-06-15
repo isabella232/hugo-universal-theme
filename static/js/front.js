@@ -91,6 +91,10 @@ $(function () {
     // Customers Slider
     // ------------------------------------------------------ //
     $(".customers").owlCarousel({
+        autoplay: true,
+        dots: false,
+        loop: true,
+        nav: false,
         responsiveClass: true,
         responsive: {
             0: {
