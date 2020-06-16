@@ -156,12 +156,18 @@ header {
 }
 
 .post {
-  color: #888;
+  color: #555;
+  font-size: 0.875rem;
+  font-weight: 400;
 }
 
 .post h2 {
   color: #888;
 }
+
+/* .post p {
+  font-size: 0.875rem;
+} */
 
 #navigation {
   float: right
