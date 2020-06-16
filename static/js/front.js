@@ -92,7 +92,7 @@ $(function () {
     // ------------------------------------------------------ //
     $(".customers").owlCarousel({
         autoplay: true,
-        dots: false,
+        dots: true,
         loop: true,
         nav: false,
         responsiveClass: true,

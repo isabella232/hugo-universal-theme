@@ -773,7 +773,7 @@ header.nav-holder.sticky {
   text-transform: uppercase;
   letter-spacing: 0.1em;
   font-size: 0.9rem;
-  text-decoration: none;
+  text-decoration: underline;
   border-top: .3rem solid transparent;
 }
 

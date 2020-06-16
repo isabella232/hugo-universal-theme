@@ -2,16 +2,18 @@
 {{ if .Site.Params.carousel.enable }}
 {{ if gt (len .Site.Data.carousel) 0 }}
 <!-- carousel start -->
-<section style="background: url('../img/photogrid.jpg') center center repeat; background-size: cover;" class="bar background-white relative-positioned">
+<section style="background: url('../img/photogrid.jpg') center center repeat; background-size: cover;"
+    class="bar background-white relative-positioned">
     <div class="container">
         <div class="home-carousel">
-            <div class="dark-mask mask-primary"></div>
+            <div class="dark-mask mask-primary">
+            </div>
             <div class="container">
-                <div class="homepage owl-carousel owl-loaded owl-drag">
+                <div class="homepage owl-carousel owl-loaded owl-drag owl-height">
                     {{ range sort .Site.Data.carousel "weight" }}
                     <div class="item">
                         <div class="row">
-                            <div class="col-sm-5 right">
+                            <div class="col-sm-5 carousel-item-right">
                                 <h1>{{ .title }}</h1>
                                 {{ .description | safeHTML }}
                             </div>

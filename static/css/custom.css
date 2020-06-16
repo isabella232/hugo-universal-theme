@@ -33,9 +33,14 @@ h4 {
 } */
 
 .contact .btn.btn-outline-primary {
- background: #fff;
+  background: #fff;
 }
 
+/* .home-carousel div {
+  background: url('../img/photogrid.jpg') center center repeat;
+  background-size: cover;
+  /* class="bar background-white relative-positioned" */
+/* } */
 
 header {
   /* position: fixed; */
@@ -43,6 +48,7 @@ header {
   background-color: #fff;
   z-index: 999;
 }
+
 .card-columns {
   width: 100%;
 }
@@ -68,11 +74,13 @@ header {
   font-size: .9rem;
   color: #555;
 }
+
 .card-title p::before {
   padding: 0;
   vertical-align: middle;
   /* height: 1rem; */
 }
+
 .card-body label {
   font-size: 0.8rem;
   font-weight: 400 !important;
@@ -91,9 +99,29 @@ header {
   margin-right: auto;
 }
 
+.home-carousel .carousel-item-right h1 {
+  font-size: 2.875rem;
+  margin: 20px;
+  margin-right: 0;
+}
+
+.home-carousel {
+  /* list-style: right; */
+  text-align: right;
+}
+
 .box-image-text .image {
   min-height: 200px;
   max-height: 200px;
+}
+
+.img-fluid {
+  max-height: 400px;
+  width: auto;
+}
+.img-rounded img {
+
+  max-width: 100%;
 }
 
 .box-simple h3 {
@@ -170,6 +198,10 @@ footer.main-footer .contact a {
   font-size: 0.75rem;
   font-weight: 900;
   vertical-align: middle;
+}
+
+#footer .contact {
+  color: #858585;
 }
 
 #heading-breadcrumbs {
