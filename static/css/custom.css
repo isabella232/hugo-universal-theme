@@ -1,8 +1,5 @@
 /* your styles go here */
 
-/* html, body {
-  height: 100%;
-} */
 body {
   font-size: 100%;
 }
@@ -23,37 +20,35 @@ h4 {
   font-size: 1rem;
 }
 
-/* h5 {
+.bar {
+  padding-top: 60;
+  padding-bottom: 60;
+}
+#blog-listing-medium .author-category {
   font-size: 0.75rem;
-  font-weight: 900;
-} */
+  float: left;
+}
 
-/* #card-accordion div {
-  margin-bottom: 20px;
-} */
+#blog-listing-medium .date-comments a {
+  font-size: 0.75rem;
+  float: right;
+}
 
 .contact .btn.btn-outline-primary {
   background: #fff;
+  /* margin-bottom: 20px; */
 }
 
-/* .home-carousel div {
-  background: url('../img/photogrid.jpg') center center repeat;
-  background-size: cover;
-  /* class="bar background-white relative-positioned" */
-/* } */
-
 header {
-  /* position: fixed; */
   opacity: 100%;
   background-color: #fff;
   z-index: 999;
+  float: center;
 }
 
 .card-columns {
   width: 100%;
 }
-
-.card {}
 
 .card-header {
   color: #333;
@@ -78,7 +73,6 @@ header {
 .card-title p::before {
   padding: 0;
   vertical-align: middle;
-  /* height: 1rem; */
 }
 
 .card-body label {
@@ -90,13 +84,18 @@ header {
   cursor: pointer;
 }
 
-.heading h1 {}
-
 .heading.text-center h1::after {
   border-bottom: solid 5px #467fbf;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+}
+
+.homepage {
+  display: block;
+}
+.home-carousel .img-fluid {
+  max-height: 400px;
 }
 
 .home-carousel .carousel-item-right h1 {
@@ -106,22 +105,12 @@ header {
 }
 
 .home-carousel {
-  /* list-style: right; */
   text-align: right;
 }
 
 .box-image-text .image {
   min-height: 200px;
   max-height: 200px;
-}
-
-.img-fluid {
-  max-height: 400px;
-  width: auto;
-}
-.img-rounded img {
-
-  max-width: 100%;
 }
 
 .box-simple h3 {
@@ -165,16 +154,18 @@ header {
   color: #888;
 }
 
-/* .post p {
-  font-size: 0.875rem;
-} */
-
 #navigation {
   float: right
 }
 
-footer.main-footer {
+#navbar .navbar-nav li a {
+  line-height: 1.25rem;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+footer.main-footer  {
   color: #eeeeee;
+  line-height: 1.75rem;
   position: relative;
 }
 
@@ -215,21 +206,7 @@ footer.main-footer .contact a {
   font-size: 0.7rem;
 }
 
-/* #blog-listing-medium .post .date-comments {
-  float: right; */
-/* font-size: 12px; */
-/* #footer .blog-list .item .name a {
-  text-transform: uppercase;
-} */
-/* #blog-listing-medium .post .date-comments a {
-  color: #999999;
-  margin-right: 20px;
-} */
-
 .read-more a {
-  /* color: #888;
-  background-color: #fff;
-  border-color: #888; */
   float: right;
 }
 
@@ -248,10 +225,27 @@ div.section {
 
 #map {
   border: 0rem;
-  /* border-top: 1px solid #467fbf;
-  border-bottom: 1px solid #467fbf;
-  height: 300px; */
 }
+
+
+@media (max-width: 767px) {
+  .home-carousel {
+    text-align: center !important;
+  }
+  .home-carousel p, .home-carousel h1, .home-carousel ul {
+    text-align: center !important;
+  }
+  .home-carousel .carousel-item-right h1 {
+    font-size: 2.25rem;
+  }
+  .home-carousel li {
+    font-size: 0.825rem;
+  }
+  .home-carousel img {
+    margin: 10px auto;
+  }
+}
+
 
 /*!
  * Yamm!3 - Yet another megamenu for Bootstrap 3

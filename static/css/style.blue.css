@@ -939,6 +939,10 @@ header.nav-holder.sticky {
   filter: grayscale(0%);
 }
 
+.customers .owl-dot.active span {
+  background: #467fbf !important;
+}
+
 .testimonials .item {
   margin: 0 5px;
   height: 100%;
