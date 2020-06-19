@@ -1,64 +1,70 @@
-<footer class="main-footer">
+<footer id="footer" class="main-footer  fixed-bottom">
     <div class="container">
         <div class="row">
+
             {{ if isset .Site.Params "about_us" }}
-            <div class="col-lg-3">
-                <h4 class="h6">{{ i18n "aboutUs" }}</h4>
-                {{ .Site.Params.about_us | safeHTML }}
-                <hr class="d-block d-lg-none">
-            </div>
+            <div class="col-lg-4 col-md-6">
+                <h4>{{ i18n "aboutUs" }}</h4>
+            <p>
+                {{ .Site.Params.about_us | markdownify }}
+            </p>
+                <hr class="d-lg-none">
+            </div class="col-lg-4 col-md-6">
             {{ end }}
 
-            <div class="col-lg-3">
-                {{ if isset .Site.Params "recent_posts" }} {{ if .Site.Params.recent_posts.enable }}
-                <h4 class="h6">{{ i18n "recentPosts" }}</h4>
-                <ul class="list-unstyled footer-blog-list"></ul>
-                    {{ range first 3 (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
-                    <li class="d-flex align-items-center">
-                        <div class="image">
-                            {{ if isset .Params "banner" }}
-                            <img src="{{ .Site.BaseURL}}{{ .Params.banner }}" class="img-fluid" alt="{{ .Title }}">
-                            {{ else }}
-                            <img src="{{ .Site.BaseURL}}img/placeholder.png" class="img-fluid" alt="{{ .Title }}">
-                            {{ end }}
+            <div class="col-lg-5 col-md-6">
+
+                {{ if and (isset .Site.Params "recent_posts") (.Site.Params.recent_posts.enable) }}
+                <h4 class="mb-4">Recent News</h4>
+
+                <div class="blog-list">
+                    {{ range first 3 (where .Site.RegularPages "Type" "news") }}
+                    <div class="same-height-row align-items-center item clearfix">
+                        <div class="image same-height-always">
+                            <a href="{{ .Permalink }}">
+                                <img src="{{ .Site.BaseURL}}{{ .Params.banner }}" class="img-fluid" alt="{{ .Title }}">
+                            </a>
                         </div>
-                        <div class="text">
-                            <h5 class="mb-0"><a href="{{ .Permalink }}">{{ .Title }}</a></h5>
+                        <div class="name same-height-always col-10">
+                            <h5><a href="{{ .Permalink }}">{{ .Title }}</a></h5>
                         </div>
-                    </li>
+                    </div>
                     {{ end }}
-                </ul>
-                <hr class="d-block d-lg-none">
-                {{ end }} {{ end }}
-            </div>
-            <!-- /.col-lg-3 -->
+                </div class="blog-entries">
 
-            {{ if isset .Site.Params "address" }}
-            <div class="col-lg-3 mb-2">
-                <h4 class="h6">{{ i18n "contactTitle" }}</h4>
-                {{ .Site.Params.address | safeHTML }}
-                <a href="/contact" class="btn btn-small btn-template-main">{{ i18n "contactGoTo" }}</a>
-            </div>
-            <!-- /.col-lg-3 -->
-            {{ end }}
-        </div>
-    </div>
-    <!-- /.container -->
+                {{ end }}
+                <hr class="d-lg-none">
 
-    <div class="copyrights">
+            </div class="col-lg-6 col-md-6">
+
+            {{ if isset .Site.Params "company_name" }}
+            <div class="col-md-3 col-sm-6">
+                <div class="contact">
+                    <h4>{{ i18n "contactTitle" }}</h4>
+                    <strong>{{ .Site.Params.company_name | markdownify}}</strong><br>
+                    {{ .Site.Params.street_address | markdownify}}<br>
+                    {{ .Site.Params.city_state | markdownify}}<br>
+                    <a class="mt-2" href="tel:803-545-0575">{{ .Site.Params.phone_number | markdownify}}</a><br>
+                    <a class="mt-2 btn btn-outline-primary" href="/contact">Send us a message</a>
+                </div class="contact">
+            </div class="col-md-4 col-sm-6">
+            <hr class="hidden-xl hidden-md hidden-lg hidden-sm">
+            {{ end }}        
+        </div class="row">
+    </div class="container">
+
+    <div id="copyright" class="copyrights">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4 text-center-md">
+                <div class="col-md-12">
                     {{ if isset .Site.Params "copyright" }}
-                    <p>{{ .Site.Params.copyright | safeHTML }}</p>
+                    <p class="pull-left">{{ .Site.Params.copyright | safeHTML }}</p>
                     {{ end }}
+                    <p class="pull-right">
+                    </p>
                 </div>
-                <div class="col-lg-8 text-right text-center-md">
-                    <p>{{ i18n "templateBy" | markdownify }} <a href="https://bootstrapious.com/p/big-bootstrap-tutorial">Bootstrapious </a> & <a href="https://fity.cz/ostrava">Fity</a></p>
-                    <!-- Please do not remove the backlink to us unless you purchase the Attribution-free License at https://bootstrapious.com/donate. Thank you. -->
-                    <p>{{ i18n "portedBy" | markdownify }} <a href="https://github.com/devcows/hugo-universal-theme">DevCows</a>.</p>
             </div>
         </div>
-    </div>
-</footer>
-<!-- /#footer -->
+    </div id="copyright">
+
+</footer id="footer">

@@ -4,11 +4,11 @@
 <!-- carousel start -->
 <section style="background: url('../img/photogrid.jpg') center center repeat; background-size: cover;"
     class="background-white relative-positioned">
-    <div class="container">
+    {{/*  <div class="container">  */}}
         <div class="home-carousel">
-            <div class="dark-mask mask-primary">            </div>
+            {{/*  <div class="dark-mask mask-primary">            </div>  */}}
             <div class="container">
-                <div class="homepage owl-carousel owl-loaded owl-drag owl-height">
+                <div class="homepage owl-carousel owl-loaded">
                     {{ range sort .Site.Data.carousel "weight" }}
                     <div class="item">
                         <div class="row box-sizing">
@@ -16,8 +16,8 @@
                                 <h1>{{ .title }}</h1>
                                 {{ .description | safeHTML }}
                             </div>
-                            <div class="col-lg-7 col-sm-12">
-                                <img class="img-fluid" src="{{ .image }}" alt="">
+                            <div class="col-lg-7 col-sm-12 text-center">
+                                <img class="img-fluid" src="{{ .image }}" >
                             </div>
                         </div>
                     </div>
@@ -26,7 +26,7 @@
                 <!-- /.project owl-slider -->
             </div>
         </div>
-    </div>
+    {{/*  </div>  */}}
 </section>
 <!-- carousel start -->
 {{ end }}

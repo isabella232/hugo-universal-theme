@@ -138,6 +138,10 @@ $(function () {
         margin: 0,
         dots: true,
         nav: false,
+        // height: 400,
+        // autoHeight: true,
+        // width: 1140,
+        // autoWidth: true,
         autoplay: true,
         smartSpeed: 1000,
         addClassActive: true,
@@ -173,7 +177,7 @@ $(function () {
 
 
     // ------------------------------------------------------- //
-    // Project Caroudel
+    // Project Carousel
     // ------------------------------------------------------ //
     $('.project').owlCarousel({
         loop: true,

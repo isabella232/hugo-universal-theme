@@ -94,6 +94,7 @@ header {
 .homepage {
   display: block;
 }
+
 .home-carousel .img-fluid {
   max-height: 400px;
 }
@@ -106,6 +107,18 @@ header {
 
 .home-carousel {
   text-align: right;
+  background: rgba(70, 127, 191, 0.9);
+  /* height: 400px; */
+  /* width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0; */
+  z-index: -1;
+}
+
+.home-carousel .owl-carousel .owl-dots {
+  margin-top: 10px;
+  line-height: 27px;
 }
 
 .box-image-text .image {
@@ -137,6 +150,10 @@ header {
 
 .navbar-brand {
   float: left;
+}
+
+.nav-holder.row {
+  margin: 0;
 }
 
 .portfolio-project ul {
