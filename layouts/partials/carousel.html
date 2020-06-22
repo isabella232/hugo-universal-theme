@@ -7,17 +7,17 @@
     {{/*  <div class="container">  */}}
         <div class="home-carousel">
             {{/*  <div class="dark-mask mask-primary">            </div>  */}}
-            <div class="container">
+            <div class="container p-0">
                 <div class="homepage owl-carousel owl-loaded">
                     {{ range sort .Site.Data.carousel "weight" }}
                     <div class="item">
                         <div class="row box-sizing">
-                            <div class="col-lg-5 col-sm-12 carousel-item-right">
+                            <div class="col-lg-5 col-sm-12">
                                 <h1>{{ .title }}</h1>
                                 {{ .description | safeHTML }}
                             </div>
-                            <div class="col-lg-7 col-sm-12 text-center">
-                                <img class="img-fluid" src="{{ .image }}" >
+                            <div class="col-lg-auto col-sm-12">
+                                <img class="img-fluid" src="{{ .image }}">
                             </div>
                         </div>
                     </div>

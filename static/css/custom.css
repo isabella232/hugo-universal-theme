@@ -91,15 +91,7 @@ header {
   margin-right: auto;
 }
 
-.homepage {
-  display: block;
-}
-
-.home-carousel .img-fluid {
-  max-height: 400px;
-}
-
-.home-carousel .carousel-item-right h1 {
+.home-carousel .item h1 {
   font-size: 2.875rem;
   margin: 20px;
   margin-right: 0;
@@ -108,11 +100,6 @@ header {
 .home-carousel {
   text-align: right;
   background: rgba(70, 127, 191, 0.9);
-  /* height: 400px; */
-  /* width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0; */
   z-index: -1;
 }
 
