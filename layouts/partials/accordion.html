@@ -2,10 +2,6 @@
 
 <div class="accordion" id="cardAccordion">
     {{ range $index, $element := sort .Site.Data.accordion "weight" }}
-    {{ $show := " " }}
-    {{ if eq $index 0 }}
-    {{ $show := "show" }}
-    {{ end }}
     <div class="card">
         <div class="card-header" id="heading{{ $index }}">
             <div class="card-title mb-0">
