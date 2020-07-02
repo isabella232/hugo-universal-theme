@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+
+  {{ partial "head.html" . }}
+
+  <body>
+
+    <div id="all">
+
+        <header>
+
+          {{ partial "nav.html" . }}
+
+        </header>
+
+        {{ partial "breadcrumbs.html" . }}
+        <div id="content">
+            <div class="container">
+                <!-- *** LEFT COLUMN *** -->
+
+               <div class="row portfolio-project">
+                   <div class="col-md-8">
+                       <div class="heading">
+                           <h2>Product description</h2>
+                       </div>
+                       {{ .Content }}
+                   </div>
+                   <div class="col-md-4 project-more">
+                       <div class="card sidebar-menu">
+                           {{ if isset .Params "vendor" }}
+                           <div class="card-header">
+                               <h3 class="card-title">Vendor</h3>
+                           </div>
+                           <div class="card-body">
+                               <p>{{ .Params.vendor }}</p>
+                           </div>
+                           {{ end }}
+                
+                       {{ if isset .Params "categories" }}
+                           <div class="card-header">
+                               <h3 class="card-title"class="card-title">Categories</h4>
+                           </div>
+                           <div class="card-body">
+                               <p>{{ delimit .Params.categories ", " }}</p>
+                           </div>
+                       {{ end }}
+
+                       {{ if and (isset .Params "tags") (.Params.tags) }} 
+                            <div class="card-header">
+                                <h3 class="card-title">Tags</h3>
+                            </div>
+                            <div class="card-body">
+                                <ul class="tag-cloud">
+                                {{ range .Params.tags }}
+                                   <li><a href="#"><span class="fa fa-tags"></span>{{ . }}</li></a>
+                                {{ end }}
+                               </ul>
+                           </div>
+                       {{ end }}
+                       </div>
+                   </div>
+               </div>
+               
+                <!-- /#blog-post -->
+
+                <!-- *** LEFT COLUMN END *** -->
+
+                <!-- *** RIGHT COLUMN *** -->
+                <!-- /.col-md-3 -->
+
+                <!-- *** RIGHT COLUMN END *** -->
+
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /#content -->
+
+        {{ partial "footer.html" . }}
+
+    </div>
+    <!-- /#all -->
+
+    {{ partial "scripts.html" . }}
+
+  </body>
+</html>

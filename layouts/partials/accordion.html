@@ -1,0 +1,29 @@
+{{ if and (isset .Site.Params "accordion") (.Site.Params.accordion.enable) }}
+
+<div class="accordion" id="cardAccordion">
+    {{ range $index, $element := sort .Site.Data.accordion "weight" }}
+    {{ $show := " " }}
+    {{ if eq $index 0 }}
+    {{ $show := "show" }}
+    {{ end }}
+    <div class="card">
+        <div class="card-header" id="heading{{ $index }}">
+            <div class="card-title mb-0">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse{{ $index }}"
+                    aria-expanded="true" aria-controls="collapse{{ $index }}">
+                    <p class="fa {{ $element.icon }} m-0"></p> {{ $element.title }}
+                </button>
+            </div>
+        </div>
+        <div id="collapse{{ $index }}" class="collapse{{ if eq $index 0 }} show{{ end }}" aria-labelledby="heading{{ $index }}"
+            data-parent="#cardAccordion">
+            <div class="card-body">
+                <p class="card-text">
+                    {{ $element.text | safeHTML }}
+                </p>
+            </div>
+        </div>
+    </div>
+    {{ end }}
+</div>
+{{ end }}

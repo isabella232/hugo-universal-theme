@@ -1,0 +1,333 @@
+/* your styles go here */
+
+.boxed {
+  background: url(https://www.toptal.com/designers/subtlepatterns/patterns/subtle_zebra_3d.png);
+}
+/* .bar {
+  padding-top: 60;
+  padding-bottom: 60;
+  } */
+.pagination {
+    padding: 20px 0;
+    border-top: 1px solid #e6e6e6;
+}
+
+#heading-breadcrumbs {
+  font-size: 0.7rem;
+  margin-bottom: 2.5rem;
+}
+
+.customers .owl-dot.active span {
+  background: #467fbf !important;
+}
+
+@media (max-width: 767px) {
+  .home-carousel .carousel-item-right h1 {
+    font-size: 2.25rem;
+  }
+  .home-carousel li {
+    font-size: 0.825rem;
+  }
+}
+
+#blog-listing-medium .author-category {
+  font-size: 0.75rem;
+  float: left;
+}
+
+#blog-listing-medium .date-comments a {
+  font-size: 0.75rem;
+  float: right;
+}
+
+#map {
+  border: 0rem;
+}
+
+h1,
+.h1 {
+  font-size: 1.875rem;
+}
+
+h2,
+.h2 {
+  font-size: 1.5rem;
+}
+
+h3,
+.h3 {
+  font-size: 1.125rem;
+}
+
+.box-simple h4 {
+  font-weight: normal;
+  font-size: 18px;
+  text-transform: uppercase;
+  line-height: 1.5;
+  color: #555555;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.contact .btn.btn-outline-primary {
+  background: #fff;
+  /* margin-bottom: 20px; */
+}
+
+.page-item {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  padding: 0.5rem 0.75rem;
+}
+
+header {
+  opacity: 100%;
+  background-color: #fff;
+  z-index: 999;
+  float: center;
+}
+
+.card {
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+
+.card-columns {
+  width: 100%;
+}
+
+.card-header {
+  color: #333;
+  background-color: #f5f5f5;
+  border-color: #ddd;
+  margin: 0;
+}
+
+.card-header button {
+  font-size: 1rem;
+  color: #333;
+  padding: 0;
+  margin: 0 !important;
+  line-height: 1rem;
+}
+
+.card-body {
+  color: #555;
+  padding: 15;
+  /* border: 1px; */
+}
+
+card-body p {
+  font-size: .9rem;
+}
+
+.card-title p::before {
+  padding: 0;
+  vertical-align: middle;
+}
+
+.card-header button {
+  border: 0;
+}
+/* .card-title h3::after {
+
+} */
+
+.card-body label {
+  font-size: 0.8rem;
+  font-weight: 400 !important;
+  color: #777;
+  opacity: 0.9;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.accordion > .card:not(:last-of-type) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+/* .accordion > .card:not(:first-of-type) .card-body {
+  display: none;
+} */
+
+.heading.text-center h1::after {
+  border-bottom: solid 5px #467fbf;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.home-carousel .item h1 {
+  font-size: 2.875rem;
+  margin: 20px;
+  margin-right: 0;
+}
+
+.home-carousel {
+  text-align: right;
+  background: rgba(70, 127, 191, 0.9);
+  z-index: -1;
+}
+
+.home-carousel .owl-carousel .owl-dots {
+  margin-top: 10px;
+  line-height: 27px;
+}
+
+.box-image-text .image {
+  min-height: 200px;
+  max-height: 200px;
+}
+
+.box-simple h3 {
+  font-weight: normal;
+  font-size: 18px;
+  text-transform: uppercase;
+  line-height: 1.5;
+  color: #555555;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.box-simple.box-white {
+  margin-bottom: 40px;
+  min-height: 230px;
+  text-align: center;
+}
+
+.bar.background-gray {
+  background: #eeeeee;
+}
+
+.navbar-brand {
+  float: left;
+}
+
+.nav-holder.row {
+  margin: 0;
+}
+
+.portfolio-project ul {
+  font-size: .85rem;
+  color: #888;
+}
+
+.post {
+  color: #555;
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+
+.post h2 {
+  color: #888;
+}
+
+#navigation {
+  float: right
+}
+
+#navbar .navbar-nav li a {
+  line-height: 1.25rem;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+footer.main-footer  {
+  color: #eeeeee;
+  line-height: 1.75rem;
+  position: relative;
+}
+
+footer.main-footer .contact a {
+  color: #467fbf;
+}
+
+#footer .blog-list .item {
+  height: 3rem;
+  vertical-align: middle;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+#footer .blog-list .item .image {
+  float: left;
+  vertical-align: middle;
+}
+
+#footer .blog-list .item .name {
+  float: right;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+
+#footer .blog-list .item .name h5 {
+  font-size: 0.75rem;
+  font-weight: 900;
+  vertical-align: middle;
+}
+
+#footer .contact {
+  color: #858585;
+}
+
+address {
+  margin-bottom: 0.5rem;
+}
+
+.read-more a {
+  float: right;
+}
+
+section,
+div.section {
+  margin-bottom: 2.5rem;
+}
+
+.clearfix .author-category p {
+  float: left;
+}
+
+.clearfix .data-comments p {
+  float: right;
+}
+
+/*!
+ * Yamm!3 - Yet another megamenu for Bootstrap 3
+ * http://geedmo.github.com/yamm3
+ *
+ * @geedmo - Licensed under the MIT license
+ */
+ .yamm .nav,
+ .yamm .collapse,
+ .yamm .dropup.use-yamm,
+ .yamm .dropdown.use-yamm {
+   position: static;
+ }
+ 
+ .yamm .container {
+   position: relative;
+ }
+ 
+ .yamm .dropdown-menu {
+   left: auto;
+ }
+ 
+ .yamm .nav.navbar-right .dropdown-menu {
+   left: auto;
+   right: 0;
+ }
+ 
+ .yamm .yamm-content {
+   padding: 20px 30px;
+ }
+ 
+ .yamm .dropdown.yamm-fw .dropdown-menu {
+   left: 15px;
+   right: 15px;
+ }

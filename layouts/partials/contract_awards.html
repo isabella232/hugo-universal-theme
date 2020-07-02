@@ -1,0 +1,14 @@
+{{ if isset .Params "awards" }}
+    {{ $includes := .Params.awards }}
+    {{ $plural_awards := gt (len $includes) 1 }}
+    {{ $contract := .Params.id }}
+    <h5>Award{{if $plural_awards}}s{{end}}</h5>
+    {{ range .Site.Data.awards}}
+        {{ if eq .idiq_id $contract }}
+           <p>
+               <span class="fa fa-award" title="Award"></span>
+               {{ .title }} ({{ .number}})
+           </p>
+        {{ end }}
+    {{ end }}
+{{ end }}
